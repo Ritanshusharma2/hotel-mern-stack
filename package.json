@@ -1,0 +1,16 @@
+{
+  "name": "hotel-booking-system",
+  "version": "1.0.0",
+  "description": "Fullstack MERN Hotel Booking System",
+  "scripts": {
+    "backend": "cd backend && npm start",
+    "backend-dev": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend-dev\" \"npm run frontend\"",
+    "seed": "cd backend && node seed.js",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
